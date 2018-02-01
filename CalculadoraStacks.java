@@ -24,9 +24,15 @@ public class CalculadoraStacks implements Calculadora{
 					resul *= this.stack.pop();
 					this.stack.push(resul);
 				}else if(charOperacion.equals("/")) {
-					Integer resul = this.stack.pop();
-					resul /= this.stack.pop();
-					this.stack.push(resul);
+					try{
+						Integer resul = this.stack.pop();
+						resul /= this.stack.pop();
+						this.stack.push(resul);
+					}catch(ArithmeticException er){
+						return("Error: "+ er.getMessage());
+					}
+				}else{
+					return "Error: Caracter incorrecto";
 				}
 			}
 		
