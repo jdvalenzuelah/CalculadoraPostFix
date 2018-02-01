@@ -1,4 +1,8 @@
-
+//Universidad del Valle de Guatemala
+//Algoritmos y Estructura de Datos
+//David Valenzuela		171001
+//Fernando Hengstenberg 17699	
+//Calculadora 1.0
 
 public class CalculadoraStacks implements Calculadora{
 
@@ -11,11 +15,11 @@ public class CalculadoraStacks implements Calculadora{
 			try {
 				stack.push(Integer.parseInt(charOperacion));
 			}catch(Exception e){
-				if(charOperacion.equals("+")) {
+				if(charOperacion.equals("+")) {//condicion 1
 					Integer resul = this.stack.pop();
 					resul += this.stack.pop();
 					this.stack.push(resul);
-				}else if(charOperacion.equals("-")) {
+				}else if(charOperacion.equals("-")) {//condicion 2
 					Integer resul = this.stack.pop();
 					resul -= this.stack.pop();
 					this.stack.push(resul);
