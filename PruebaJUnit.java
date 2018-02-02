@@ -1,17 +1,17 @@
 /**
-* @author David Valenzuela 171001
-* @author Fernando Hengstenberg 17699
-*
-*/
+ * @author David Valenzuela 171001
+ * @author Fernando Hengstenberg 17699
+ */
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.*;
+
 import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-class PruebaJUnit {
-	
-	public CalculadoraStacks calc;
-	public StackVector<String> stack;
+class TestJUnit {
+
+	public CalculadoraStacks calc = new CalculadoraStacks();
+	public StackVector<String> stack = new StackVector<String>();
 	
 	/**
 	 * QUe hacer antes de cadaprueba
@@ -56,7 +56,5 @@ class PruebaJUnit {
 		stack.pop();
 		assertEquals(0, stack.size());
 	}
-	
-	
-	
+
 }
