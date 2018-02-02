@@ -24,8 +24,6 @@ import java.util.Scanner;
  *
  */
 public class MainCalc {
-		
-	}
 
 	/**
 	 * @param args

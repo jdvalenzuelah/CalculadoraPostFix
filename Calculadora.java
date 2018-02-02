@@ -6,8 +6,8 @@
 //Calculadora 1.0
 
 /**
- * @author daval
- * @author FerHen
+ * @author David Valenzuela 171001
+ * @author Fernando Hengstenberg
  */
 public interface Calculadora {
 
