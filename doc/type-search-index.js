@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"CalculadoraStack","l":"Calculadora"},{"p":"CalculadoraStack","l":"CalculadoraStacks"},{"p":"CalculadoraStack","l":"MainCalc"},{"p":"CalculadoraStack","l":"Stack"},{"p":"CalculadoraStack","l":"StackVector"}]

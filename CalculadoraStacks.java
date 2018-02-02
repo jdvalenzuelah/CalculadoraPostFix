@@ -1,13 +1,23 @@
+
 //Universidad del Valle de Guatemala
 //Algoritmos y Estructura de Datos
 //David Valenzuela		171001
 //Fernando Hengstenberg 17699	
 //Calculadora 1.0
 
+/**
+ * @author David Valenzuela 171001
+ * @author Fernando Hengstenberg 17699
+ */
+
+
 public class CalculadoraStacks implements Calculadora{
 
 	StackVector<Integer> stack = new StackVector<Integer>();
 	
+	/* (non-Javadoc)
+	 * @see CalculadoraStack.Calculadora#calcular(java.lang.String)
+	 */
 	@Override
 	public String calcular(String operacion) {
 		String[] splitOperacion = operacion.split(" ");

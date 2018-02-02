@@ -1,15 +1,14 @@
 
-//Universidad del Valle de Guatemala
-//Algoritmos y Estructura de Datos
-//David Valenzuela		171001
-//Fernando Hengstenberg 17699	
-//Calculadora 1.0
-
 /**
- * @author David Valenzuela 171001
- * @author Fernando Hengstenberg
+  * @author David Valenzuela 171001
+ * @author Fernando Hengstenberg 17699
  */
 public interface Calculadora {
 
+	/**
+	 * Operacion de string postfix
+	 * @param operacionString de operacion
+	 * @return Valor de la operacion, o en caso de erro, retorna el error
+	 */
 	public String calcular(String operacion);
 }

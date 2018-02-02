@@ -1,3 +1,4 @@
+
 //Universidad del Valle de Guatemala
 //Algoritmos y Estructura de Datos
 //David Valenzuela		171001
@@ -15,14 +16,10 @@ import java.util.Scanner;
 
 
 /**
- * 
+ * @author David Valenzuela 171001
+ * @author Fernando Hengstenberg 17699
  */
 
-
-/**
- * @author daval
- *
- */
 public class MainCalc {
 
 	/**
@@ -33,13 +30,16 @@ public class MainCalc {
 		CalculadoraStacks calc = new CalculadoraStacks();
 
 
-		System.out.println("ingrese el nombre del archivo");// le pedimos que ingrese el nombre del archivo
+		System.out.println("ingrese ruta o el nombre del archivo");// le pedimos que ingrese el nombre del archivo
 		String nombre = sc.nextLine(); // guardamos el nombre del archivo en la variable nombre
 		File datos = new File(nombre);  
 		try {
+			String line;
 			BufferedReader  reader = new BufferedReader(new FileReader(datos));
-			String line = reader.readLine();
-			System.out.println(line + " =" + calc.calcular(line));	
+			 while((line = reader.readLine()) != null) {
+			System.out.println(line + " =" + calc.calcular(line));
+			 }
+			 reader.close();
 		}catch(IOException e) {
 			System.out.println("Error: " + e.getMessage()); // en caso de algun error 
 		}
